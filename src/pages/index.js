@@ -65,14 +65,21 @@ var items = [
 //Make Row Function for each experience, it takes in an parameter type array call items (Helper func)
 function makeItem(items){
     return items.map(item => {
-        return <Grid style={{marginTop: "5%", marginLeft: "4%"}} item justify='center' ><CustomRow item={item} /></Grid>
+        return <Grid style={{marginTop: "2%", marginLeft: "4%"}} item justify='center' ><CustomRow item={item} /></Grid>
     })
 }
 
+// everything on home page!
 function Home(props) {
     return (
         <div>
             <IndexHeading />
+            <p style={{textAlign: "center", fontSize: "20px", marginBottom: "-0.5%"}}>
+                <span className="design" style={{marginRight: "5%", color: "gray"}}>View Design</span> 
+                <span className="dev" style={{marginLeft: "5%", color: "gray"}}>View Development</span>
+            </p>
+            <hr style={{width: "85%", color: "#007bff"}}/>
+            <h2 style={{textAlign: "center"}}>Design</h2>
             <Grid container style={{maxWidth: '100%'}} justify='center' spacing={3}>{makeItem(items)}</Grid>
         </div>
     );

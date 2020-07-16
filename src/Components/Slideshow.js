@@ -48,6 +48,7 @@ return (
         <div className="each-fade">
         <div className="image-container">
             <img src={fadeImages[3]} />
+        I can't spend all my time on campus without visiting the beautiful Ithacan gorges! My friends and I hike everywhere during the summer.
         </div>
         </div>
     </Fade>

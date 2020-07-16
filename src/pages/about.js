@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -122,8 +123,8 @@ function About(props) {
     return (
         <div>
             <Row className="responsive" style={{marginLeft: "6%", marginTop: "5%"}}>
-                {/* <Col style={{borderStyle: "solid", borderColor: "blue", width: "10%"}}> */}
-                <img className="responsive" src = {Me} />
+                {/* <Col style={{borderStyle: "", borderColor: "", width: "10%"}}> */}
+                <img className="responsive" style={{height: "550px"}}src = {Me} />
                 {/* </Col> */}
                 <Col className="responsive" style={{marginLeft: "5%", width: "50%", marginRight: "5%", marginTop: "3%"}}>
                 <h1>Hey, welcome to my humble abode! :)</h1>
@@ -139,8 +140,8 @@ function About(props) {
                 <p>Now that you know a bit about me, would you like to get real coffee? Let's get in touch by email or connect on LinkedIn!</p>
                 </Col>
             </Row>
-            <h1 style={{textAlign: "center", paddingTop: "1.5%", marginTop: "4%"}}>What do I know? Ask me about...</h1>
-            <div style={{backgroundColor: "#f2f7ff", width: "90%", margin: "auto", borderRadius: "20px"}}>
+            <h2 style={{textAlign: "center", paddingTop: "1.5%", marginTop: "4%", color: "#007bff"}}>What do I know? Ask me about...</h2>
+            <div style={{backgroundColor: "#f2f7ff", width: "100%", margin: "", borderRadius: "0px"}}>
                 <h3 className="mt-4" style={{textAlign: "center", paddingTop: "2%"}}>Design</h3><hr width="95%" />
                 {/* <p><b>Interaction/Visual:</b></p> */}
                 <Grid container alignItems="left" className="mt-4" style={{width: "80%", marginLeft: "10%", marginRight: "10%"}}> 
@@ -162,8 +163,12 @@ function About(props) {
                     {makeImgs3(icons3)}
                 </Grid>
             </div>
-            <h1 style={{textAlign: "center", marginTop: "5%"}}>What else have I done in this life?</h1>
+            <h2 style={{textAlign: "center", marginTop: "5%", color: "#007bff"}}>What else have I done in this life?</h2>
             <Slideshow />
+            <div style={{border: "solid", borderWidth: "3px", borderColor: "#007bff", borderRadius: "10px", width: "45%", textAlign: "center", marginTop: "5%", marginLeft: "27.5%"}}>
+                <Button style={{fontSize: "25px", marginTop: "7%", marginBottom: "2%", borderRadius: "7px"}}>Learn more</Button>
+                <p style={{paddingBottom: "2%"}}>about my past & side hobbies!</p>
+            </div>
         </div>
     );
 }

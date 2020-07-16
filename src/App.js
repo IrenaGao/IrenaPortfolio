@@ -10,6 +10,7 @@ import Diya from './assets/diyathumbnail.png';
 import Snapchat from './assets/snapchatthumbnail.png';
 import Home from './pages/index.js';
 import About from './pages/about.js';
+import Misc from './pages/misc.js';
 import NavigBar from './Components/NavigBar.js';
 import NavBar from 'react-bootstrap/NavBar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -59,6 +60,7 @@ function App() {
                    <Route path="/" exact render={() => <Home />} />
                    <Route path="/about" render={() => <About />} />
                    <Route path="/resumedev" render={() => <ResumeDev />} />
+                   <Route path="/misc" render={() => <Misc />} />
                </Container>
            </Router>
     </div>

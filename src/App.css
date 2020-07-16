@@ -1,7 +1,28 @@
 .firsttext {
   text-align: center;
-  margin-right: 10%;
-  margin-left: 10%;
+  /* margin-right: 10%;
+  margin-left: 10%; */
+  background-image: url(./assets/nightbackground.jpg);
+  /* background-size: contain; */
+}
+
+@media only screen and (max-width: 600px) {
+  .firsttext {
+    background: none;
+    color: black !important;
+  }
+}
+
+.headerstyle2 {
+  color: #0cc4d7 !important;
+}
+
+.headerstyle {
+  color: #B92427 !important;
+}
+
+a:hover {
+  text-decoration: none !important;
 }
 
 .App-logo {
@@ -151,5 +172,14 @@
 .each-fade .image-container img {
   width: 100%;
   /* height: 80%; */
+}
+
+h1 {
+  color: #007bff;
+  /* color: #b3d7ff; */
+}
+
+.design:hover, .dev:hover {
+  color: blue;
 }
 
