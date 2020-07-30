@@ -78,6 +78,7 @@ a:hover {
 #border {
   width: 500px;
   border-radius: 8%;
+  box-shadow: 10px 10px 10px #aaaaaa;
 }
 
 .responsive {
@@ -176,10 +177,32 @@ a:hover {
 
 h1 {
   color: #007bff;
-  /* color: #b3d7ff; */
+  /* color: rgb(146, 146, 146); */
+}
+
+.design, .dev {
+  position: relative;
+  top: 0;
+  transition: top ease 0.3s;
 }
 
 .design:hover, .dev:hover {
-  color: blue;
+  color: #007bff !important;
+  top: -7px;
+  cursor: pointer;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.font {
+  font-size: 18px;
+  margin: 1px;
+}
+
+.titlelink:hover {
+  border-bottom: 1px solid gray;
+  color: gray;
+  transition: 0.1s;
+}

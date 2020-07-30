@@ -14,7 +14,7 @@ function CustomRow(props){
                 </div>
                     <div className="title mt-3">
                         <text><span style={{color: '#007bff'}}>{props.item.role}</span>
-                        <span style={{color: 'lightgray'}}>{props.item.title}</span></text>
+                        <a href={props.item.titlelink} target="_blank" style={{color: 'lightgray'}}> // <span className="titlelink">{props.item.title}</span></a></text>
                     </div>
                     <div className="text mt-1">
                         <text>{props.item.text}</text>
