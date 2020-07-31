@@ -11,6 +11,82 @@
     background: none;
     color: black !important;
   }
+
+  .overview {
+    font-size: 90%;
+    top: 12%;
+  }
+
+  .text2 {
+    font-size: 135%;
+    left: 45%;
+    margin-left: -30%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .footerlogos {
+    display: block;
+    margin-top: 4%;
+    margin-bottom: 6%;
+  }
+
+  .gratitude {
+    margin-bottom: 6%;
+  }
+
+  .footerlogos img {
+    margin-right: 2.5%;
+  }
+
+  .footer {
+    text-align: center;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 9%;
+    margin-top: 10%;
+    padding-bottom: 7%;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .copyright {
+    float: right;
+  }
+  
+  .slide-container {
+    width: 40%;
+    height: 40%;
+    margin: auto; 
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .overview {
+    font-size: 110%;
+    margin-right: 9%;
+    top: 15%;
+  }
+
+  .text2 {
+    font-size: 150%;
+    left: 40%;
+    margin-left: -30%;
+  }
+
+  .footer {
+    padding-top: 2.5%;
+    margin-top: 5%;
+    padding-bottom: 1.5%;
+  }
+
+  .gratitude {
+    margin-bottom: 1.5%;
+  }
+
+  .footerlogos img {
+    margin-right: 1%;
+  }
 }
 
 .headerstyle2 {
@@ -87,26 +163,27 @@ a:hover {
 
 .view {
   position: relative;
+  /* text-align: center; */
 }
 
 .text2 {
+  /* display: inline-block;
+  margin: 0 auto; */
   opacity: 0;
   position: absolute;
-  /* margin: 0 auto; */
-  margin-left: 17%;
-  /* left: 0;
-  right: 0; */
-  top: 42%;
-  text-align: center;
-  /* width: 50%; */
   background-color: #007bff;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-right: 15%;
-  padding-left: 15%;
   color: white;
   border-radius: 100px;
-  font-size: 23px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+  text-align: center;
+  width: 70%;
+}
+
+.button2 {
+  padding: 10px;
 }
 
 .blah {
@@ -117,12 +194,30 @@ a:hover {
 .view:hover .responsive{
   opacity: 0.3;
   transition: 0.5s;
+}
+
+.overview {
+  opacity: 0;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 6%;
+  padding-right: 6%;
+  position: absolute;
+  text-align: center;
+}
+
+.view:hover .overview {
+  background-color: white;
+  opacity: 1;
+}
+
+.view:hover .text2 {
+  opacity: 1;
   cursor: pointer;
 }
 
-.view:hover .text2{
-  opacity: 1;
-  cursor: pointer;
+.text2:hover {
+  background-color: #0065d1;
 }
 
 .text {
@@ -136,13 +231,6 @@ a:hover {
 
 .alignhorizontal {
   display: flex;
-}
-
-/* About */
-.slide-container {
-  width: 40%;
-  height: 40%;
-  margin: auto; 
 }
  
 .each-slide > div {
@@ -171,7 +259,8 @@ a:hover {
 }
  
 .each-fade .image-container img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   /* height: 80%; */
 }
 
@@ -180,13 +269,13 @@ h1 {
   /* color: rgb(146, 146, 146); */
 }
 
-.design, .dev {
+#design, #dev {
   position: relative;
   top: 0;
   transition: top ease 0.3s;
 }
 
-.design:hover, .dev:hover {
+#design:hover, #dev:hover {
   color: #007bff !important;
   top: -7px;
   cursor: pointer;
@@ -203,6 +292,6 @@ html {
 
 .titlelink:hover {
   border-bottom: 1px solid gray;
-  color: gray;
+  color: rgb(104, 104, 104);
   transition: 0.1s;
 }

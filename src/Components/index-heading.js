@@ -1,7 +1,7 @@
 import React from 'react';
 import TextLoop from 'react-text-loop';
 import Night from '../assets/naturebackground.jpg';
-import arrow from '../assets/down-arrow.png';
+import project from '../assets/project.png';
 
 function IndexHeading(props) {
 
@@ -18,8 +18,8 @@ function IndexHeading(props) {
             </div>
             <p>designing solutions and implementing software that solves problems.</p>
             <p style={{marginTop: "2%"}}>I'm the Program Coordinator @ <a href="https://lifechanginglabs.com/" className="headerstyle" target="_blank">Life Changing Summer</a>, SWE Intern @ <a href="https://empeq.co/" className="headerstyle2" target="_blank">EMPEQ.</a></p>
-            <img src={arrow} width="60px" style={{marginTop: "60px"}} />
-            <p style={{color: "black", marginTop: "0.5%"}}>View my work below :).</p>
+            <p style={{color: "black", marginTop: "60px"}}>View my work below :).</p>
+            <img src={project} width="60px" />
         </div>
     );
 }

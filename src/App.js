@@ -52,6 +52,8 @@ function App() {
                    </Navbar> */}
 
                    <NavBar collapseOnSelect expand="lg">
+                    <Navbar.Toggle aria-controls="navbar-toggle" />
+                      <Navbar.Collapse id="navbar-toggle">
                         <Nav className="nav ml-auto mt-4" style={{marginRight: "5%"}}>
                             <Nav.Link className="navitem ml-5" href="/">HOME</Nav.Link>
                             <Nav.Link className="navitem ml-5" href="/about">ABOUT ME</Nav.Link>
@@ -74,6 +76,7 @@ function App() {
                                 </NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
+                      </Navbar.Collapse>
                     </NavBar>
                    <Route path="/" exact render={() => <Home />} />
                    <Route path="/about" render={() => <About />} />
