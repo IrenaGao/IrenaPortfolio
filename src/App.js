@@ -22,6 +22,7 @@ import Github from './assets/githublogo.png';
 import LinkedIn from './assets/linkedinlogo.png';
 import Email from './assets/gmaillogo.png';
 import Medium from './assets/mediumlogo.png';
+import Logo from './assets/personallogo.png';
 
 import {
   BrowserRouter as Router,
@@ -39,22 +40,15 @@ function App() {
   return (
     <div>
       <Router>
-               <Container fluid={true}>
-                   {/* <Navbar bg="transparent" expand="lg">
-                       <Navbar.Toggle aria-controls="navbar-toggle"/>
-                       <Navbar.Collapse id="navbar-toggle">
-                           <Nav className="ml-auto">
-                               <h5> <Link className="nav-link navtext" to="/">HOME</Link></h5>
-                               <h5> <Link className="nav-link navtext" to="/contact">CONTACT</Link></h5>
-                               <h5> <Link className="nav-link navtext" to="/me">ABOUT ME</Link></h5>
-                           </Nav>
-                       </Navbar.Collapse>
-                   </Navbar> */}
-
+        <Row style={{maxWidth: "100%", marginTop: "1.5%"}}>
+          <Col>
+            <a href="/"><img src={Logo} width="80%" style={{marginLeft: "10%", marginBottom: "0.5%"}} /></a>
+          </Col>
+               <Container>
                    <NavBar collapseOnSelect expand="lg">
                     <Navbar.Toggle aria-controls="navbar-toggle" />
                       <Navbar.Collapse id="navbar-toggle">
-                        <Nav className="nav ml-auto mt-4" style={{marginRight: "5%"}}>
+                        <Nav className="nav ml-auto" style={{marginRight: "2%"}}>
                             <Nav.Link className="navitem ml-5" href="/">HOME</Nav.Link>
                             <Nav.Link className="navitem ml-5" href="/about">ABOUT ME</Nav.Link>
                             <NavDropdown title="RESUME" className="navitem navresume ml-5" id="collapsible-nav-dropdown">
@@ -78,11 +72,12 @@ function App() {
                         </Nav>
                       </Navbar.Collapse>
                     </NavBar>
+                    </Container>
+                    </Row>
                    <Route path="/" exact render={() => <Home />} />
                    <Route path="/about" render={() => <About />} />
                    <Route path="/resumedev" render={() => <ResumeDev />} />
-                   <Route path="/misc" render={() => <Misc />} />
-               </Container>
+                  <Route path="/misc" render={() => <Misc />} />
            </Router>
     </div>
   );

@@ -116,7 +116,7 @@ function makeItem(items){
 
 function makeItem2(items){
     return items.map(item => {
-        return <Grid style={{marginBottom: "1%", marginTop: "2%", marginLeft: "4%"}} item justify='center' ><CustomRow item={item} /></Grid>
+        return <Grid style={{marginBottom: "0%", marginTop: "3%", marginLeft: "4%"}} item justify='center' ><CustomRow item={item} /></Grid>
     })
 }
 

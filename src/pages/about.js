@@ -23,6 +23,7 @@ import js from '../assets/javascript.png';
 import python from '../assets/python.png';
 import sql from '../assets/sql.png';
 import react from '../assets/react.png';
+import empty from '../assets/emptyimage.jpg';
 
 import Grid from '@material-ui/core/Grid';
 import CustomText from '../Components/Skills';
@@ -53,8 +54,11 @@ var icons = [
     },
     {
         img: mockup,
-        text: "Mockup"
-    },
+        text: "Mockups"
+    }
+]
+
+var icons15 = [
     {
         img: contextmapping,
         text: "Context Mapping"
@@ -122,22 +126,24 @@ var icons3 = [
 function About(props) {
     let iconimg = '';
     return (
-        <div>
+        <div style={{maxWidth: "99%"}}>
             <AboutText />
+            <div className="aboutresp">
             <h2 style={{textAlign: "center", paddingTop: "1.5%", marginTop: "60px", color: "#007bff"}}>What do I know? Ask me about...</h2>
             <div style={{backgroundColor: "#f2f7ff", width: "100%", margin: "", borderRadius: "0px"}}>
                 <h3 className="mt-4" style={{textAlign: "center", paddingTop: "28px"}}>Design</h3><hr width="95%" />
                 {/* <p><b>Interaction/Visual:</b></p> */}
-                <Grid container alignItems="left" className="mt-4" style={{width: "80%", marginLeft: "10%", marginRight: "10%"}}> 
-                    <Grid item> 
+                <Grid container alignItems="left" className="mt-4 mb-4" style={{width: "80%", marginLeft: "10%", marginRight: "10%"}}> 
+                    <Grid className="mb-2" item> 
                         <p><b>Interaction/Visual:</b></p>
                     </Grid>
-                    {makeImgs(icons)}
+                    {makeImgs(icons)}<span style={{marginRight: "13%", color: "#f2f7ff"}}>.</span>
+                    {makeImgs15(icons15)}
                 </Grid>
                 <hr width="30%" />
                 <Grid container className="mt-4" alignItems="left" style={{paddingBottom: "2%", width: "80%", marginLeft: "10%", marginRight: "10%"}}>
                     <Grid item>
-                        <p><b>Software</b></p>
+                        <p><b>Software:</b></p>
                     </Grid>
                     {makeImgs2(icons2)}
                 </Grid>
@@ -154,6 +160,7 @@ function About(props) {
                 <Button style={{fontSize: "25px", marginTop: "7%", marginBottom: "2%", borderRadius: "7px"}}>Learn more</Button>
                 <p style={{paddingBottom: "2%"}}>about my past & side hobbies!</p>
             </div> */}
+            </div>
             <Footer />
         </div>
     );
@@ -162,6 +169,12 @@ function About(props) {
 function makeImgs(icons) {
     return icons.map(icon => {
         return <CustomText image={icon.img} text={icon.text} />
+    });
+}
+
+function makeImgs15(icons15) {
+    return icons15.map(icon15 => {
+        return <CustomText image={icon15.img} text={icon15.text} />
     });
 }
 
