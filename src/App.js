@@ -41,7 +41,7 @@ function App() {
     <div>
       <Router>
         <Row style={{maxWidth: "100%", marginTop: "1.5%"}}>
-          <Col>
+          <Col id="firstrow" >
             <a href="/"><img src={Logo} width="80%" style={{marginLeft: "10%", marginBottom: "0.5%"}} /></a>
           </Col>
                <Container>
@@ -56,16 +56,16 @@ function App() {
                                 <NavDropdown.Item href={ResumeUX} target="_blank" className="font">Design</NavDropdown.Item>
                             </NavDropdown>
                             <NavDropdown title="CONTACT" className="navitem navresume ml-5" id="collapsible-nav-dropdown">
-                                <NavDropdown.Item href={ResumeUX} target="_blank" className="font" style={{marginTop: "2%"}}>
+                                <NavDropdown.Item href="https://linkedin.com/in/irenagao" target="_blank" className="font" style={{marginTop: "2%"}}>
                                   <img src={LinkedIn} width="30px" style={{marginRight: "8%", marginTop: "-3%"}}/>LinkedIn
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href={ResumeUX} target="_blank" className="font" style={{marginTop: "3%"}}>
+                                <NavDropdown.Item href="mailto:ijg24@cornell.edu" className="font" style={{marginTop: "3%"}}>
                                   <img src={Email} width="30px" style={{marginRight: "8%", marginTop: "-3%"}}/>Email
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href={ResumeDev} target="_blank" className="font" style={{marginTop: "3%"}}>
+                                <NavDropdown.Item href="https://github.com/irenagao" target="_blank" className="font" style={{marginTop: "3%"}}>
                                   <img src={Github} width="30px" style={{marginRight: "8%", marginTop: "-3%"}}/>Github
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href={ResumeDev} target="_blank" className="font" style={{marginTop: "3%"}}>
+                                <NavDropdown.Item href="https://medium.com/@ijg24" target="_blank" className="font" style={{marginTop: "3%"}}>
                                   <img src={Medium} width="30px" style={{marginRight: "8%", marginTop: "-3%"}}/>Medium
                                 </NavDropdown.Item>
                             </NavDropdown>

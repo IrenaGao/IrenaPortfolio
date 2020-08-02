@@ -11,6 +11,9 @@ function CustomRow(props){
                     <img className='responsive' id='border' src={props.item.img} />
                     {props.item.overview !== undefined &&
                     <div className="overview">
+                        <a href={props.item.titlelink} target="_blank">
+                            {props.item.title}
+                        </a>
                         {props.item.overview}
                     </div>
                     }
@@ -32,11 +35,11 @@ function CustomRow(props){
                             <span style={{color: '#007bff'}}>
                                 {props.item.role}
                             </span>
-                            <a href={props.item.titlelink} target="_blank" style={{color: 'rgb(177, 177, 177)'}}> // <span className="titlelink">
-                                    {props.item.title}
-                                </span>
-                            </a>
+                            <span style={{color: 'rgb(177, 177, 177)'}}> // {props.item.time}</span>
                         </text>
+                    </div>
+                    <div style={{fontWeight: 650, marginLeft: "0.5%", marginTop: "1%", marginBottom: "1.5%"}}>
+                        {props.item.tools}
                     </div>
                     <div className="text mt-1">
                         <text>{props.item.text}</text>

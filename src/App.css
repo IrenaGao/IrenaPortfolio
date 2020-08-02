@@ -7,6 +7,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .totop {
+    margin-bottom: 4%;
+  }
+
   .firsttext {
     background: none;
     color: black !important;
@@ -23,12 +27,17 @@
     margin-left: -30%;
   }
 
-  .aboutresp {
-    /* margin-left: 4%; */
+  h3 {
+    margin-bottom: 1px !important;
   }
 }
 
 @media only screen and (max-width: 900px) {
+
+  .viewextra {
+    margin-left: 1%;
+  }
+
   .footerlogos {
     display: block;
     margin-top: 4%;
@@ -62,6 +71,10 @@
     width: 40%;
     /* height: 40%; */
     margin: auto; 
+  }
+
+  .time {
+    float: right;
   }
 }
 
@@ -261,6 +274,11 @@ a:hover {
   /* width: 75%; */
   /* overflow: hidden; */
 }
+
+.viewextra:hover {
+  border-bottom: solid;
+  transition: 0.1s;
+}
  
 .each-fade .image-container img {
   max-width: 100%;
@@ -294,8 +312,8 @@ html {
   margin: 1px;
 }
 
-.titlelink:hover {
+/* .titlelink:hover {
   border-bottom: 1px solid gray;
   color: rgb(104, 104, 104);
   transition: 0.1s;
-}
+} */
