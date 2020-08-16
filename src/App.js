@@ -42,11 +42,11 @@ function App() {
       <Router>
         <Row style={{maxWidth: "100%", marginTop: "1.5%"}}>
           <Col id="firstrow" >
-            <a href="/"><img src={Logo} width="80%" style={{marginLeft: "10%", marginBottom: "0.5%"}} /></a>
+            <a href="/"><img src={Logo} width="80%" className="irenaimage" style={{marginLeft: "10%", marginBottom: "0.5%"}} /></a>
           </Col>
                <Container>
                    <NavBar collapseOnSelect expand="lg">
-                    <Navbar.Toggle aria-controls="navbar-toggle" />
+                    <Navbar.Toggle aria-controls="navbar-toggle"/>
                       <Navbar.Collapse id="navbar-toggle">
                         <Nav className="nav ml-auto" style={{marginRight: "2%"}}>
                             <Nav.Link className="navitem ml-5" href="/">HOME</Nav.Link>
